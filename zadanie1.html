@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Tablice </title>
+    </head>
+    <body>
+        <script>
+
+tab = [1,2,3]
+document.write(tab[0]+' ')
+document.write(tab[1] + '<br>')
+tab[1] = 45
+for(i=0;i<tab.length; i++){
+    document.write(tab[i]+'')
+}
+tab[3] = 55
+document.write('<br>')
+for ( i = 0; i < tab.length; i++){
+    document.write(tab[i] + '' )
+}
+tab.push(4,12,4)
+document.write('<br>')
+for ( i = 0; i < tab.length; i++){
+    document.write(tab[i] + '' )
+}
+tab.pop()
+document.write('<br>')
+for ( i = 0; i < tab.length; i++){
+    document.write(tab[i] + '' )
+}
+tab.shift()
+document.write('<br>')
+for ( i = 0; i < tab.length; i++){
+    document.write(tab[i] + '' )
+}
+tab.unshift(12,14)
+document.write('<br>')
+for ( i = 0; i < tab.length; i++){
+    document.write(tab[i] + '' )
+}
+
+        </script>
+    </body>
+</html>
