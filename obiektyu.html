@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiekty uzytkownika</title>
+</head>
+<body>
+    <script>/*
+        function osoba (imie,nazwisko,wiek){
+        this.nazwisko = nazwisko;
+        this.imie = imie;
+        this.wiek = wiek;
+        }
+var kobieta = new osoba('Kowalska','Janina',20);
+document.write('<b>Obiekt to: </b' + kobieta.nazwisko+''+kobieta.imie);
+document.write('<br>Janina ma'+kobieta.wiek+' lat. ');*/
+/*
+function szpital(lekarz,specjalizacja,pacjent){
+    this.lekarz=lekarz;
+    this.specjalizacja = specjalizacja;
+    this.pacjent = pacjent;
+}
+function osoba(imie,nazwisko){
+    this.nazwisko = nazwisko;
+    this.imie = imie;
+}
+oddzial = new szpital('Piotr Nowak', 'chirurg', pacjent);
+pacjent = new osoba('Jan', 'Kowalski ');
+document.write('<b>lekarz:</b>'+oddzial.lekarz + '</br>');
+document.write('<b>specjalizacja:</b>'+oddzial.specjalizacja + '</br>');
+document.write('<b>pacjent:</b>'+oddzial.pacjent.imie + ''+oddzial.pacjent.nazwisko+'</br>');
+*/
+function kot(imie,wiek,waga){
+    this.imie=imie;
+    this.wiek=wiek;
+    this.waga=waga;
+
+    this.miaucz=function(){
+        document.write("<b>Miau,miau....</b>");
+    }
+}
+zwierze = new kot("Mruczek",5,3);
+document.write(zwierze.imie + ' jest kotem, ktory ma '+ zwierze.wiek+' lat');
+document.write(' i wazy ' + zwierze.waga + 'kilogramny');
+document.write('<br> Mój kot potrafi wydawać dzwieki<br>');
+zwierze.miaucz();
+    </script>
+</body>
+</html>
